@@ -107,7 +107,7 @@
             else if (mediaQueryDark.matches) activateDarkMode()
             else {
               const hour = new Date().getHours()
-              const isNight = hour <= 6 || hour >= 18
+              const isNight = hour <= 8 || hour >= 22
               isNight ? activateDarkMode() : activateLightMode()
             }
             mediaQueryDark.addEventListener('change', () => {
